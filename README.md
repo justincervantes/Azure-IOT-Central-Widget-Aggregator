@@ -5,6 +5,10 @@ Though IOT Central is a great service to quickly get started and visualize data,
 
 This node.js application is a service which queries Azure's CosmosDB service (which can be connected to your IOT Central app), aggregates payloads from different devices, and pretends to be a new device, thus enabling a user to have a widget which shows aggregated data.
 
+As a note about how this program has been implemented into Microsoft Azure's ecosystem - messages are sent via MQTT to IOT Central. 
+
+![](Images/ecosystem.png)
+
 In order to run this program, you must have Node.js installed on your local machine.
 Download information can be found here: https://nodejs.org/en/download/
 
@@ -12,4 +16,4 @@ From the current directory, run the following commands in your preferred CLI:
 npm install - this installs all the dependencies required to run this node service
 node app.js - runs the program
 
-Disclaimer: The database URI and access key specified in config.js will have changed since the time of document posting. The connection string to a given IoT Central will also have changed. These have been left as a demonstration of what to look for when replacing your own service's connection details. If deploying a similar service, and are looking for templates, I have commented each section where the user ought to replace their connection values.
+<b>Disclaimer</b>: The database URI and access key specified in config.js will have changed since the time of document posting. The connection string to a given IoT Central will also have changed. These have been left as a demonstration of what to look for when replacing your own service's connection details. If deploying a similar service, and are looking for templates, I have commented each section where the user ought to replace their connection values.
